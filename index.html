@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A simple calculator with basic arithmetic functions"
+    />
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <!--Iconify library to add icons-->
+    <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <a href="index.html">
+          <span id="simple">Simple </span>
+          <span id="calculator">Calculator</span>
+        </a>
+      </div>
+    </header>
+
+    <button id="btn-theme">
+      <iconify-icon icon="fa-solid:sun" id="icon-theme"></iconify-icon>
+    </button>
+
+    <section>
+      <div class="calculator">
+        <div id="result">
+          <p id="predicted"></p>
+          <div contenteditable="true" type="text" id="current" value="0">0</div>
+          <div id="previous-container"></div>
+        </div>
+        <div class="flex">
+          <button id="clear" class="calculator-btn">AC</button>
+          <button id="backspace" class="calculator-btn">
+            <iconify-icon icon="fa-solid:backspace"></iconify-icon>
+          </button>
+          <button id="percent" class="calculator-btn">%</button>
+          <button id="divide" class="calculator-btn">/</button>
+        </div>
+        <div class="flex">
+          <button id="seven" class="calculator-btn">7</button>
+          <button id="eight" class="calculator-btn">8</button>
+          <button id="nine" class="calculator-btn">9</button>
+          <button id="multiply" class="calculator-btn">*</button>
+        </div>
+        <div class="flex">
+          <button id="four" class="calculator-btn">4</button>
+          <button id="five" class="calculator-btn">5</button>
+          <button id="six" class="calculator-btn">6</button>
+          <button id="minus" class="calculator-btn">-</button>
+        </div>
+        <div class="flex">
+          <button id="one" class="calculator-btn">1</button>
+          <button id="two" class="calculator-btn">2</button>
+          <button id="three" class="calculator-btn">3</button>
+          <button id="plus" class="calculator-btn">+</button>
+        </div>
+        <div class="flex">
+          <button class="calculator-btn">&nbsp;</button>
+          <button id="zero" class="calculator-btn">0</button>
+          <button id="dot" class="calculator-btn">.</button>
+          <button id="equals" class="calculator-btn">=</button>
+        </div>
+      </div>
+    </section>
+
+    <script src="script/main.js"></script>
+  </body>
+</html>
